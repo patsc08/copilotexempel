@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <title>Min sida</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vfr0ikm.css">
+    <style>
+/* Reset and Global styles */
+body {
+    margin: 0;
+}
+
+/* Page Layout */
+.wholepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: url("back.png") no-repeat center center fixed;
+    background-color: green;
+    background-size: cover;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto 220px;
+    grid-template-rows: 50px 50px auto 30px;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    gap: 10px;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+}
+
+/* Typography & Elements */
+header, footer {
+    font-family: "korolev", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+    font-size: 32pt;
+}
+
+footer {
+    grid-area: footer;
+    font-family: "korolev-compressed", sans-serif;
+}
+
+nav {
+    grid-area: nav;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+/* Components & Interactivity */
+.info, .photo {
+    padding: 0 10px;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-family: "korolev-compressed", sans-serif;
+    font-weight: 300;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-family: baskerville-urw, serif;
+    font-size: 10pt;
+    line-height: 1em;
+    margin-top: 0;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="wholepage">
+        <div class="main-container">
+            <header>.portfolio.</header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsidan</a></li>
+                    <li><a href="#">CV</a></li>
+                </ul>
+
+            </nav>
+            <main>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas tortor congue, iaculis
+                        lectus vel, blandit est. Duis pulvinar tempus justo, a pulvinar lectus blandit eget. Integer id
+                        turpis malesuada, pretium metus eget, porttitor diam. Duis libero nisi, tincidunt ac
+                        sollicitudin sodales, imperdiet nec sem. Vestibulum ex elit, varius id interdum at, blandit
+                        vitae nisl. Curabitur molestie dolor non sagittis egestas. Etiam eget bibendum sem. In iaculis
+                        bibendum auctor. Nulla ut venenatis nibh. Praesent rhoncus, arcu sit amet congue pulvinar,
+                        turpis libero consequat quam, sit amet pellentesque eros tortor sit amet odio. Aenean eget urna
+                        risus.</p>
+
+                    <p>Nulla elementum, urna nec iaculis interdum, arcu quam vulputate arcu, vel auctor arcu lectus
+                        vitae erat. In ut venenatis mauris. Donec tempus, mauris vitae fringilla auctor, eros nibh
+                        cursus risus, sed vulputate nisl sem eget nisl. Aenean laoreet tempor bibendum. Donec felis
+                        magna, blandit id pharetra ac, aliquet non tellus. In ultrices turpis neque, nec luctus massa
+                        bibendum rutrum. Praesent arcu arcu, posuere a neque vel, viverra dictum nisl. Proin at
+                        tristique mi. Vivamus ullamcorper sodales vestibulum. <span id="countdown"></span></p>
+
+                    <p>Suspendisse libero enim, blandit quis porttitor eget, efficitur a massa. Suspendisse molestie,
+                        massa sed sollicitudin interdum, felis velit iaculis orci, sed venenatis mi sem ac libero. Duis
+                        pulvinar purus nec nibh suscipit, nec commodo quam lacinia. Phasellus ultrices diam quis
+                        tincidunt dignissim. Proin viverra varius quam. Nunc urna risus, vehicula volutpat nisl in,
+                        eleifend molestie mauris. Suspendisse augue nisi, porttitor non semper in, placerat quis sem.
+                        Maecenas bibendum mi rutrum diam blandit, quis fringilla nisi tincidunt. Nulla semper, nisl eu
+                        dictum ultrices, sapien magna dictum urna, in venenatis nunc odio ut lacus. Proin dictum ipsum
+                        eu euismod accumsan. Ut ultricies pellentesque imperdiet. Nulla facilisi. Quisque purus tortor,
+                        luctus dictum viverra vestibulum, iaculis sed leo.</p>
+
+                    <p>Mauris quis diam tempus, porta lectus pharetra, maximus justo. Aenean nec commodo enim, quis
+                        lacinia enim. Praesent finibus dapibus nibh, ut convallis lectus dictum quis. Curabitur maximus
+                        et orci at bibendum. Praesent fermentum volutpat hendrerit. Nam sed odio augue. Aliquam erat
+                        volutpat.</p>
+
+                    <p>Proin at nibh enim. Sed finibus rutrum augue non aliquam. Quisque tellus tortor, placerat in
+                        tortor vitae, elementum ornare mi. Fusce vehicula vitae urna eu porttitor. In luctus mattis
+                        dapibus. Donec venenatis non odio et congue. Sed pulvinar tellus eu risus fringilla malesuada.
+                        Fusce consectetur lectus fermentum risus hendrerit efficitur. Vivamus pulvinar, lorem efficitur
+                        dapibus luctus, ligula mauris ornare diam, eget lacinia purus turpis non turpis. Aenean
+                        venenatis quis massa ut semper. Mauris efficitur augue ac diam pulvinar, nec elementum felis
+                        blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper enim eget
+                        lectus pretium venenatis. Nullam non maximus ex. Cras posuere elit sed condimentum blandit.
+                    <p>Proin at nibh enim. Sed finibus rutrum augue non aliquam. Quisque tellus tortor, placerat in
+                        tortor vitae, elementum ornare mi. Fusce vehicula vitae urna eu porttitor. In luctus mattis
+                        dapibus. Donec venenatis non odio et congue. Sed pulvinar tellus eu risus fringilla malesuada.
+                        Fusce consectetur lectus fermentum risus hendrerit efficitur. Vivamus pulvinar, lorem efficitur
+                        dapibus luctus, ligula mauris ornare diam, eget lacinia purus turpis non turpis. Aenean
+                        venenatis quis massa ut semper. Mauris efficitur augue ac diam pulvinar, nec elementum felis
+                        blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper enim eget
+                        lectus pretium venenatis. Nullam non maximus ex. Cras posuere elit sed condimentum blandit.</p>
+                </div>
+                <div class="photo">
+                    <img src="bild1.png" alt="">
+                    <img src="bild2.png" alt="">
+                    <img src="bild3.png" alt="">
+                    <img src="bild4.png" alt="">
+                </div>
+            </main>
+            <footer>&copy; Patrick Schooner 2024</footer>
+        </div>
+    </div>
+    <script src="dinKod.js"></script>
+</body>
+
+</html>
